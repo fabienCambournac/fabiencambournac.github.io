@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Japon</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flipclock.css">
+    <link rel="stylesheet" href="css/perso.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+   <div id="wrapper">
+    <div class="container">
+   <h1 class="text-center">Jap<span class="rouge">o</span>n</h1>
+       <h2 class="text-center">Plus Que :</h2>
+        <div class="center">
+        <div class="clock" style="margin:2em;"></div>
+        </div>
+         <div id="after"><p class="text-center">Avant le Depart</p></div>
+ </div>
+    
+</div>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+    <script src="js/flipclock.min.js"></script>
+
+    <script type="text/javascript">
+        var clock;
+
+        $(document).ready(function () {
+            $('#wrapper').tubular({
+                videoId: 'XWIsDdDPJEs'
+            }); // where idOfYourVideo is the YouTube ID.
+
+            // Grab the current date
+            var currentDate = new Date();
+
+            // Set some date in the future. In this case, it's always Jan 1
+            var futureDate = new Date(2015, 9, 1);
+
+            // Calculate the difference in seconds between the future and current date
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+            // Instantiate a coutdown FlipClock
+            clock = $('.clock').FlipClock(diff, {
+                clockFace: 'DailyCounter',
+                countdown: true,
+                language: 'fr'
+            });
+        });
+    </script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'aqua';
+    src: url('fonts/aqua.ttf');
+}
+
+body{
+ font-family: 'aqua', arial, serif;
+    
+}
+h1 {
+    color: #fff;
+    font-size: 70px;
+     font-weight: bold;
+    padding: 20px;
+}
+.rouge{
+color: red;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -0%)
+}
+
+#after {
+    margin-top: 150px;
+}
