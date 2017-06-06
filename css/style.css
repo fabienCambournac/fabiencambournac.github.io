@@ -183,13 +183,22 @@ header {
     }
 }
 
+.vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
 header h1 {
     font-family: "Montserrat-Black", sans-serif;
     margin-top: 10px;
     font-size: 10vw;
     color: white;
-    display: inline-block;
     line-height: 80%;
+    margin: auto;
 }
 
 header h1 span {
@@ -461,9 +470,11 @@ header .icon-bonjour {
     opacity: 0;
     display: none
 }
+
 .portfolio-modal a {
     margin-bottom: 30px;
 }
+
 #contact {
     margin-bottom: 50px;
 }

@@ -1,22 +1,4 @@
 $(document).ready(function () {
-    window.sr = ScrollReveal({reset: true} );
-sr.reveal('.foo');
-sr.reveal('.bar', { duration: 200 });
-
-    $(window).resize(function () {
-        $('header').height($(window).height());
-
-        $('header .container').css({
-            'padding-top': ((($(window).height()) / 2) - $('header h1').height()) + 50
-
-        });
-
-    });
-    $(window).load(function () {
-        // au chargement complet de la page, la fonction resize() est appelée une fois pour initialiser le centrage.
-        $(window).resize();
-
-    });
 
     $(document).on("scroll", onScroll);
 
