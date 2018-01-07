@@ -2,98 +2,85 @@
     font-family: "muli";
     src: url('police/Muli-Regular.ttf');
 }
+
 @font-face {
     font-family: "centabel";
     src: url('police/centabel.ttf');
 }
 
-
-
-html{
-    margin:0;
-    padding:0;
-    background:  url(images/fond.jpg)  no-repeat center fixed;
-    -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-    background-size: cover; /* version standardisée */
-   // border-width:20px;
-    //border-style:solid ;
-    //border-color:white;
-    //height: 100%;
+html {
+    margin: 0;
+    padding: 0;
+    background: url(images/fond.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    /* pour anciens Chrome et Safari */
+    background-size: cover;
+    /* version standardisée */
 }
 
-
-
 body {
-    font-size : 13pt;
-    font-family : "muli", Arial, sans-serif;
+    font-size: 13pt;
+    font-family: "muli", Arial, sans-serif;
     color: black;
-
 }
 
 button i {
-display: inline-block;
-vertical-align:middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 h2 {
-    margin-top : 0px;
-    font-weight : bold;
-    
+    margin-top: 0px;
+    font-weight: bold;
 }
 
 #status {
-    //position : absolute;
-    top : 0px;
+    top: 0px;
     margin: auto;
-    text-align : center;
-
+    text-align: center;
 }
-
-
-
 
 .section {
-
-    margin-top : 100px;
-    position:relative;
+    margin-top: 100px;
+    position: relative;
     text-align: center;
-    font-family : "centabel", Arial, sans-serif;
+    font-family: "centabel", Arial, sans-serif;
 }
+
 .section#intro {
-    display : block;
+    display: block;
 }
+
 .section button {
-    display : block;
-    width : 100%;
-    text-decoration : none;
+    display: block;
+    width: 100%;
+    text-decoration: none;
     font-size: 20px;
-    margin-top : 30px;
-    border : none;
-    cursor : pointer;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
     background-color: #AA4339;
-    height:60px ;
+    height: 60px;
     color: #EBEBEB;
-
-
 }
-.section button+button  {
-    margin-top : 30px;
 
+.section button+button {
+    margin-top: 30px;
 }
 
 .battle {
-    padding : 10px 10px;
-    margin : 20px 0px;
-    box-shadow : 0px 2px 8px gray;
+    padding: 10px 10px;
+    margin: 20px 0px;
+    box-shadow: 0px 2px 8px gray;
 }
 
-.note span{
-    font-size : 28pt;
-    font-family : "muli", Arial, sans-serif; 
+.note span {
+    font-size: 28pt;
+    font-family: "muli", Arial, sans-serif;
 }
 
-.commentaire span{
-  font-size : 28pt;
-  font-family : "muli", Arial, sans-serif;
-  margin-bottom: 10px;
+.commentaire span {
+    font-size: 28pt;
+    font-family: "muli", Arial, sans-serif;
+    margin-bottom: 10px;
 }
