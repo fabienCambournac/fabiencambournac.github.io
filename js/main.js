@@ -314,7 +314,7 @@ $(document).ready(function () {
         scale: 1.5,
         ease: Power2.easeOut
       });
-      //console.log('in');
+
     }, function () {
       TweenLite.to('#contact a svg', 0.3, {
         fill: '#2c3e50',
@@ -365,7 +365,6 @@ $(document).ready(function () {
       }, 'line');
 
     $('#cv').parent().hover(function () {
-      console.log('coucou');
       cvHover.timeScale(1);
       cvHover.play();
     }, function () {
