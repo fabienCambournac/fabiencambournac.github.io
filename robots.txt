@@ -1,3 +1,0 @@
-Sitemap: http://www.fabienc.fr/sitemap.xml
-User-agent: *
-Disallow: /website/
